@@ -1,0 +1,17 @@
+{
+	"name": "string-translations",
+	"version": "1.0.0",
+	"description": "Scripts for generating localizations files for Titan HST iOS, Andriod and Web applications",
+	"scripts": {
+		"generate": "npm run generate:ios && npm run generate:android && npm run generate:web",
+		"generate:ios": "node ./src/generateIOSStrings.js",
+		"generate:android": "node ./src/generateAndroidStrings.js",
+		"generate:web": "node ./src/generateWebStrings.js",
+		"clean": "rm -rf output"
+	},
+	"author": "Eric Dobyns <ericdobyns@gmail.com>",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"xlsx": "^0.15.5"
+	}
+}
